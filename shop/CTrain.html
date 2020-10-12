@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>C-TRAIN</title>
+    <link rel="stylesheet" type="text/css" href="shopcss.css">
+    <style>
+        .main-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/CTrain/shop/3.jpg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="main-image"><a href="../index.html">
+
+
+            <button class="button" id="home"><span>
+                    <img src="../img/home.png" width="40px" height="40px"></span>
+            </button></a>
+        <div class="main-text">
+            <h1 style="font-size:75px">C-TRAIN</h1>
+        </div>
+    </div>
+
+
+    <div>
+
+
+
+        <div class="img">
+            <div class="container">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 7</div>
+                    <img src="../img/CTrain/menu/1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 7</div>
+                    <img src="../img/CTrain/menu/2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 7</div>
+                    <img src="../img/CTrain/menu/3.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 7</div>
+                    <img src="../img/CTrain/menu/4.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 7</div>
+                    <img src="../img/CTrain/menu/5.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 7</div>
+                    <img src="../img/CTrain/menu/6.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">7 / 7</div>
+                    <img src="../img/CTrain/menu/7.jpg" style="width:100%">
+                </div>
+
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="../img/CTrain/menu/1.jpg" style="width:100%"
+                            onclick="currentSlide(1)" alt="Fruit Tart">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/CTrain/menu/2.jpg" style="width:100%"
+                            onclick="currentSlide(2)" alt="สปาเกตตี้แพนงหมู">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/CTrain/menu/3.jpg" style="width:100%"
+                            onclick="currentSlide(3)" alt="สปาเก็ตตี้ซีฟู้ดผัดขี้เมา">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/CTrain/menu/4.jpg" style="width:100%"
+                            onclick="currentSlide(4)" alt="ไก่ผัดเม็ดมะม่วง">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/CTrain/menu/5.jpg" style="width:100%"
+                            onclick="currentSlide(5)" alt="สตอเบอรี่ทาร์ต">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/CTrain/menu/6.jpg" style="width:100%"
+                            onclick="currentSlide(6)" alt="C-train Tose">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/CTrain/menu/7.jpg" style="width:100%"
+                            onclick="currentSlide(7)" alt="Buberry cheese cake">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="text">
+            <p> ร้านเปิดมาได้ 3 ปี ร้านตกแต่งดูดีทั้งภายนอกและภายใน เก้าอี้ส่วนใหญ่เป็นโซฟา นั่งสบายดี
+                ร้านเป็นร้านสไตล์บอร์ดเกมส์คาเฟ่ แนะนำ สปาเกตตีครีมซอส ปริมาณเยอะพอสมควร รสชาติดี หอม ๆ รสชาตินุ่ม ๆ
+                ชอบครับกับ Chocolate Lava เสิร์ฟมาในถ้วยใหญ่ พร้อมกับบลูเบอร์รีเย็น ๆ ทานด้วย รสชาติใช้ได้ โดยรวม
+                ร้านดูดีในย่านนี้ อาหารรสชาติดี ราคาไม่แพง มีเกมให้เล่นฟรีระหว่างรออาหารครับ</p>
+        </div>
+
+
+        <div class="location">
+            <button id="myBtn" class="button">Location</button>
+
+            <div id="myModal" class="modal">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Location</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>ถนน พุทธบูชา (อยู่ตรงข้ามร้านคำโต) บางมด , ทุ่งครุ , กรุงเทพมหานคร</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3877.1058550840726!2d100.4846378!3d13.6513243!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2a25609576741%3A0x6f6e18777b9562ef!2sC-Train%20Board%20Game%20Cafe!5e0!3m2!1sth!2sth!4v1574606194139!5m2!1sth!2sth"
+                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>เวลาเปิดบริการ : จันทร์ - อังคาร 11:00 - 22:00 พฤหัสบดี - อาทิตย์ : 11:00 - 22:00</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+
+
+        var modal = document.getElementById("myModal");
+
+        var btn = document.getElementById("myBtn");
+
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

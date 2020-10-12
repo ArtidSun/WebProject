@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ผัดไท iDo</title>
+    <link rel="stylesheet" type="text/css" href="shopcss.css">
+    <style>
+        .main-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/Padthai-ido/shop/1.jpg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="main-image"><a href="../index.html">
+
+            <button class="button" id="home"><span>
+                    <img src="../img/home.png" width="40px" height="40px"></span>
+            </button></a>
+        <div class="main-text">
+            <h1 style="font-size:75px">ผัดไท iDo</h1>
+        </div>
+    </div>
+
+
+    <div>
+
+        <div class="img">
+            <div class="container">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 7</div>
+                    <img src="../img/Padthai-ido/menu/1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 7</div>
+                    <img src="../img/Padthai-ido/menu/2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 7</div>
+                    <img src="../img/Padthai-ido/menu/3.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 7</div>
+                    <img src="../img/Padthai-ido/menu/4.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 7</div>
+                    <img src="../img/Padthai-ido/menu/5.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 7</div>
+                    <img src="../img/Padthai-ido/menu/6.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">7 / 7</div>
+                    <img src="../img/Padthai-ido/menu/7.jpg" style="width:100%">
+                </div>
+
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="../img/Padthai-ido/menu/1.jpg" style="width:100%"
+                            onclick="currentSlide(1)" alt="ผัดไทเส้นจันทร์+หมูกรอบเพิ่มไข่">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/Padthai-ido/menu/2.jpg" style="width:100%"
+                            onclick="currentSlide(2)" alt="สุกี้น้ำกุ้งปลาหมึก">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/Padthai-ido/menu/3.jpg" style="width:100%"
+                            onclick="currentSlide(3)" alt="กระเพราหมูกรอบ">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/Padthai-ido/menu/4.jpg" style="width:100%"
+                            onclick="currentSlide(4)" alt="ผัดกะเพราหมูสับ">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/Padthai-ido/menu/5.jpg" style="width:100%"
+                            onclick="currentSlide(5)" alt="หมูยอทอด">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/Padthai-ido/menu/6.jpg" style="width:100%"
+                            onclick="currentSlide(6)" alt="ผัดไทยใจโต">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/Padthai-ido/menu/7.jpg" style="width:100%"
+                            onclick="currentSlide(7)" alt="ผัดไทยเส้นแก้วไก่ย่าง">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="text">
+            <p> ร้านผัดไทยที่มาเปิดแทนร้านส้มตำร้านเก่าแก่ของย่านบางมด
+                ร้านนี้จะเป็นผัดไทที่เราสามารถจับคู่ได้ตามใจชอบ
+                ไม่ว่าจะเป็นสามารถเลือกได้ว่าจะทานเส้นแบบไหน ใส่เนื้ออะไรบ้าง
+                และยังมีหอยทอดที่ใส่เนื้อสัตว์หน้าตาหลากหลายได้
+                หรือถ้าไม่ทานผัดไท ก็ยังมีข้าวราดต่างๆให้เราเลือกได้ ไม่ว่าจะเป็นข้าวกะเพรา
+                ข้าวกระเทียมพริกไทยใส่เนื้อต่างๆ หรือเมนูพิเศษเองก็มีเช่นกัน</p>
+        </div>
+
+
+
+        <div class="location">
+            <button id="myBtn" class="button">Location</button>
+            <div id="myModal" class="modal">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Location</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>94 ซอยประชาอุทิศ 30/1 ถนนประชาอุทิศ กรุงเทพมหานคร (ใกล้ ม.เทคโนโลยีพระจอมเกล้าธนบุรี
+                            ติดลานไม้)</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1938.5433505521817!2d100.4967037!3d13.652489699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2a24e3b025d8f%3A0x827e340587810061!2z4Lic4Lix4LiU4LmE4LiXIGlEbw!5e0!3m2!1sen!2sth!4v1574606783217!5m2!1sen!2sth"
+                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>เวลาเปิดบริการ : 10:00 - 20:00 น.</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+
+        var modal = document.getElementById("myModal");
+
+        var btn = document.getElementById("myBtn");
+
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

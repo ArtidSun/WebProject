@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+        body,
+        html {
+            height: 100%;
+            margin: 0em;
+            font-family: 'Itim', cursive;
+            font-size: 100%;
+            color: black;
+            user-select: none;
+        }
+
+        #pro {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Profile_img/sit.jpg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+
+        }
+
+        #file {
+            position: relative;
+            top: 5em;
+        }
+
+        #home {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            float: left;
+        }
+
+        .button {
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: #fff;
+            background-color: rgb(255, 166, 0);
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        .button:hover {
+            background-color: #ffae00
+        }
+
+        .button:active {
+            background-color: #ffbb00;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pro">
+        <center><a href=""><img src="Profile_img/profile1.png" id="file" style="width: 70em;"></center>
+    </div>
+    <a href="../index.html">
+        <button class="button" id="home"><span>
+                <img src="../img/home.png" width="40px" height="40px"></span>
+        </button>
+    </a>
+
+</body>
+
+</html>

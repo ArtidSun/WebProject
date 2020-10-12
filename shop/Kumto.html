@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kumto BBQ & Beer Garden</title>
+    <link rel="stylesheet" type="text/css" href="shopcss.css">
+    <style>
+        .main-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/Kumto/shop/3.jpg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="main-image"><a href="../index.html">
+
+            <button class="button" id="home"><span>
+                    <img src="../img/home.png" width="40px" height="40px"></span>
+            </button></a>
+        <div class="main-text">
+            <h1 style="font-size:75px">Kumto BBQ & Beer Garden</h1>
+        </div>
+    </div>
+
+
+    <div>
+
+        <div class="img">
+            <div class="container">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 7</div>
+                    <img src="../img/Kumto/menu/1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 7</div>
+                    <img src="../img/Kumto/menu/2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 7</div>
+                    <img src="../img/Kumto/menu/3.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 7</div>
+                    <img src="../img/Kumto/menu/4.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 7</div>
+                    <img src="../img/Kumto/menu/5.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 7</div>
+                    <img src="../img/Kumto/menu/6.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">7 / 7</div>
+                    <img src="../img/Kumto/menu/7.jpg" style="width:100%">
+                </div>
+
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="../img/Kumto/menu/1.jpg" style="width:100%"
+                            onclick="currentSlide(1)" alt="เบค่อน">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/Kumto/menu/2.jpg" style="width:100%"
+                            onclick="currentSlide(2)" alt="ไอศกรีม">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/Kumto/menu/3.jpg" style="width:100%"
+                            onclick="currentSlide(3)" alt="กุ้งสด">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/Kumto/menu/4.jpg" style="width:100%"
+                            onclick="currentSlide(4)" alt="กุ้งเผา">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/Kumto/menu/5.jpg" style="width:100%"
+                            onclick="currentSlide(5)" alt="ของทอด">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/Kumto/menu/6.jpg" style="width:100%"
+                            onclick="currentSlide(6)" alt="ของสด">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/Kumto/menu/7.jpg" style="width:100%"
+                            onclick="currentSlide(7)" alt="ของว่าง">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="text">
+            <p> คำโตปิ้งย่างสไตล์ญี่ปุ่น ร้านปิ้งย่างใกล้มหาวิทยาลัยพระจอมเกล้าธนบุรี ร้านนี้คนค่อนข้างเยอะ
+                อาจเพราะติดใจในรสชาติแสนอร่อย ราคาบุฟเฟ่ต์แค่ 239+ บาท เท่านั้น นั่งได้ไม่จำกัดเวลา
+                ราคานี้รวมพวกอาหารทะเลไว้แล้วด้วย เนื้อมาชิ้นใหญ่ดี พวกอาหารซีฟู้ดถือว่าสดพอสมควร</p>
+        </div>
+
+
+        <div class="location">
+            <button id="myBtn" class="button">Location</button>
+            <div id="myModal" class="modal">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Location</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>ถนน พุทธบูชา (พุทธบูชา ตรงข้ามซอยพุทธบูชา 40 ประมาณ 200 เมตร ถนนมุ่งหน้าพระราม 2) บางมด ,
+                            ทุ่งครุ , กรุงเทพมหานคร</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1938.5518995373598!2d100.4855979!3d13.6514494!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2a256726c687f%3A0xb1512f066204968c!2z4LiE4Liz4LmC4LiVIOC4muC4suC4h-C4oeC4lA!5e0!3m2!1sth!2sth!4v1574606545283!5m2!1sth!2sth"
+                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>เวลาเปิดบริการ ทุกวัน : 17:00 - 23:59 </h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+
+        var modal = document.getElementById("myModal");
+
+        var btn = document.getElementById("myBtn");
+
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

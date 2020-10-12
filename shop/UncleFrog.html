@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Uncle Frog</title>
+    <link rel="stylesheet" type="text/css" href="shopcss.css">
+    <style>
+        .main-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/UncleFrog/shop/1.jpg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="main-image"><a href="../index.html">
+
+            <button class="button" id="home"><span>
+                    <img src="../img/home.png" width="40px" height="40px"></span>
+            </button></a>
+        <div class="main-text">
+            <h1 style="font-size:75px">Uncle Frog</h1>
+        </div>
+    </div>
+
+
+    <div>
+
+
+
+        <div class="img">
+            <div class="container">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 7</div>
+                    <img src="../img/UncleFrog/menu/1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 7</div>
+                    <img src="../img/UncleFrog/menu/2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 7</div>
+                    <img src="../img/UncleFrog/menu/3.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 7</div>
+                    <img src="../img/UncleFrog/menu/4.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 7</div>
+                    <img src="../img/UncleFrog/menu/5.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 7</div>
+                    <img src="../img/UncleFrog/menu/6.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">7 / 7</div>
+                    <img src="../img/UncleFrog/menu/7.jpg" style="width:100%">
+                </div>
+
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="../img/UncleFrog/menu/1.jpg" style="width:100%"
+                            onclick="currentSlide(1)" alt="ไข่ดาว+แฮม+ไส้กรอก+ขนมปัง">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/UncleFrog/menu/2.jpg" style="width:100%"
+                            onclick="currentSlide(2)" alt="ข้าวราดเต้าหู้ทรงเครื่อง">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/UncleFrog/menu/3.jpg" style="width:100%"
+                            onclick="currentSlide(3)" alt="ข้าวราดเต้าหู้ทรงเครื่อง">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/UncleFrog/menu/4.jpg" style="width:100%"
+                            onclick="currentSlide(4)" alt="ข้าวราดเต้าหู้ทรงเครื่อง">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/UncleFrog/menu/5.jpg" style="width:100%"
+                            onclick="currentSlide(5)" alt="น้ำพริกอ่องผักสด+ไข่เจียว">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/UncleFrog/menu/6.jpg" style="width:100%"
+                            onclick="currentSlide(6)" alt="ไส้กรอกหมูทอด">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/UncleFrog/menu/7.jpg" style="width:100%"
+                            onclick="currentSlide(7)" alt="ขนม">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="text">
+            <p> อีกหนึ่งร้านที่ได้ลองใน มจธ. วันธรรมดาร้านนี้เปิดแต่เช้า ร้านตั้งอยู่ชั้น 2 ตรงทางเชื่อมอาหารเรียนรวม
+                4-5 มีอาหารตามสั่ง เครื่องดื่มต่าง ๆ ลอง ข้าวราดเต้าหู้ทรงเครื่อง ราคาดีงาม รสชาติก็อร่อยพอได้
+                และสั่งไซส์เป็นไส้กรอกหมูทอดทานเพลิน ๆ ดี</p>
+        </div>
+
+
+        <div class="location">
+            <button id="myBtn" class="button">Location</button>
+            <div id="myModal" class="modal">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Location</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>อาคาร CB5 มหาวิทยาลัยพระจอมเกล้าธนบุรี (อาคารเรียนรวม 4-5 ชั้น 2 มจธ) บางมด 2 , ทุ่งครุ ,
+                            กรุงเทพมหานคร</p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d888.8367217981045!2d100.49367228869207!3d13.649660807834282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2a2523223664b%3A0xd7bd730b7b6045ba!2z4Lit4Liy4LiE4Liy4Lij4LmA4Lij4Li14Lii4LiZ4Lij4Lin4LihIDUg4LmB4LiC4Lin4LiHIOC4muC4suC4h-C4oeC4lCDguYDguILguJXguJfguLjguYjguIfguITguKPguLgg4LiB4Lij4Li44LiH4LmA4LiX4Lie4Lih4Lir4Liy4LiZ4LiE4LijIDEwMTQw!5e0!3m2!1sth!2sth!4v1574607022426!5m2!1sth!2sth"
+                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>เวลาเปิดบริการ : จันทร์ - ศุกร์ : 07:00 - 18:00 เสาร์ : 09:30 - 14:00</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+
+        var modal = document.getElementById("myModal");
+
+        var btn = document.getElementById("myBtn");
+
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

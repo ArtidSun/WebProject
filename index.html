@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>12ร้านเด็ดรอบม.เทคโนโลยีพระจอมเกล้าธนบุรี</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css?family=Itim&display=swap');
+
+        body,
+        html {
+            height: 100%;
+            margin: 0em;
+            font-family: 'Itim', cursive;
+            font-size: 100%;
+            color: black;
+            background-color: rgb(255, 244, 206);
+            user-select: none;
+        }
+
+        #mainpic {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/logo b.png");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+
+
+        .overlay {
+            height: 0%;
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.9);
+            overflow-y: hidden;
+            transition: 0.5s;
+        }
+
+        .overlay-content {
+            position: relative;
+            top: 5%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .overlay a:hover,
+        .overlay a:focus {
+            color: #f1f1f1;
+        }
+
+        .overlay .closebtn {
+            position: absolute;
+            font-size: 60px;
+            top: 15px;
+            right: 35px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .overlay {
+                overflow-y: auto;
+            }
+
+            .overlay a {
+                font-size: 20px
+            }
+
+            .overlay .closebtn {
+                font-size: 60px;
+                top: 15px;
+                right: 35px;
+            }
+        }
+
+
+        td {
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mainpic">
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <center>
+                    <table>
+                        <tr>
+                            <td><a href="shop/bangmodpizzeria.html">Bangmodpizzeria</a></td>
+                            <td><a href="shop/ctrain.html">Ctrain</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="shop/d'oro.html">D'oro</a></td>
+                            <td><a href="shop/HokkaidoCurryYukimi.html">Hokkaido</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="shop/kinkinshabu.html">Kinkinshabu</a></td>
+                            <td><a href="shop/kumto.html">Kumto</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="shop/manpuku.html">Manpuku</a></td>
+                            <td><a href="shop/RungmodCoffee.html">Rungmod</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="shop/unclefrog.html">Unclefrog</a></td>
+                            <td><a href="shop/BannGinSen.html">บ้านกินเส้น</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="shop/TheFourAunties.html">ป้าสี่คน</a></td>
+                            <td><a href="shop/Padthai-ido.html">ผัดไทido</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="developer/Develop.html">ผู้จัดทำ</a></td>
+                            <td><a href="referent.html">Referent</a></td>
+                        </tr>
+                    </table>
+                </center>
+            </div>
+        </div>
+        <div style="cursor:pointer;">
+            <center><img onclick="openNav()" src="img/logo.png"></center>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
+    <script>
+
+        var snowsrc = "img/snowba10.png"
+
+        var no = 47;
+
+        var hidesnowtime = 0;
+
+        var snowdistance = "pageheight";
+
+        var ie4up = (document.all) ? 1 : 0;
+        var ns6up = (document.getElementById && !document.all) ? 1 : 0;
+        function iecompattest() {
+            return (document.compatMode && document.compatMode != "BackCompat") ? document.documentElement : document.body
+        }
+        var dx, xp, yp;
+        var am, stx, sty;
+        var i, doc_width = 800, doc_height = 600;
+        if (ns6up) {
+            doc_width = self.innerWidth;
+            doc_height = self.innerHeight;
+        }
+        else
+            if (ie4up) {
+                doc_width = document.body.clientWidth;
+                doc_height = document.body.clientHeight;
+            }
+        dx = new Array();
+        xp = new Array();
+        yp = new Array();
+        am = new Array();
+        stx = new Array();
+        sty = new Array();
+        for (i = 0; i < no; ++i) {
+            dx[i] = 0;
+            xp[i] = Math.random() * (doc_width - 50);
+            yp[i] = Math.random() * doc_height;
+            am[i] = Math.random() * 20;
+            stx[i] = 0.02 + Math.random() / 10;
+            sty[i] = 0.7 + Math.random();
+            if (ie4up || ns6up) {
+                if (i == 0) {
+                    document.write("<div id=\"dot" + i + "\" style=\"POSITION: absolute; Z-INDEX: " + i + "; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><\/div>");
+                }
+                else {
+                    document.write("<div id=\"dot" + i + "\" style=\"POSITION: absolute; Z-INDEX: " + i + "; VISIBILITY: visible; TOP: 15px; LEFT: 15px;\"><img src='" + snowsrc + "' border=\"0\"><\/div>");
+                }
+            }
+        }
+        function snowIE_NS6() {
+            doc_width = ns6up ? window.innerWidth - 10 : iecompattest().clientWidth - 10;
+            doc_height = (window.innerHeight && snowdistance == "windowheight") ? window.innerHeight : (ie4up && snowdistance == "windowheight") ? iecompattest().clientHeight : (ie4up && !window.opera && snowdistance == "pageheight") ? iecompattest().scrollHeight : iecompattest().offsetHeight;
+            for (i = 0; i < no; ++i) {
+                yp[i] += sty[i];
+                if (yp[i] > doc_height - 50) {
+                    xp[i] = Math.random() * (doc_width - am[i] - 30);
+                    yp[i] = 0;
+                    stx[i] = 0.02 + Math.random() / 10;
+                    sty[i] = 0.7 + Math.random();
+                }
+                dx[i] += stx[i];
+                document.getElementById("dot" + i).style.top = yp[i] + "px";
+                document.getElementById("dot" + i).style.left = xp[i] + am[i] * Math.sin(dx[i]) + "px";
+            }
+            snowtimer = setTimeout("snowIE_NS6()", 10);
+        }
+        function hidesnow() {
+            if (window.snowtimer) clearTimeout(snowtimer)
+            for (i = 0; i < no; i++) document.getElementById("dot" + i).style.visibility = "hidden"
+        }
+
+        if (ie4up || ns6up) {
+            snowIE_NS6();
+            if (hidesnowtime > 0)
+                setTimeout("hidesnow()", hidesnowtime * 1000)
+        }
+    </script>
+</body>
+
+</html>

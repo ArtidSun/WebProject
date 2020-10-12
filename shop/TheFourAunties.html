@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ป้า 4 คน</title>
+    <link rel="stylesheet" type="text/css" href="shopcss.css">
+    <style>
+        .main-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/TheFourAunties/shop/1.jpg");
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="main-image"><a href="../index.html">
+
+            <button class="button" id="home"><span>
+                    <img src="../img/home.png" width="40px" height="40px"></span>
+            </button></a>
+        <div class="main-text">
+            <h1 style="font-size:75px">ป้า 4 คน</h1>
+        </div>
+    </div>
+
+
+    <div>
+
+
+
+        <div class="img">
+            <div class="container">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 7</div>
+                    <img src="../img/TheFourAunties/menu/1.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 7</div>
+                    <img src="../img/TheFourAunties/menu/2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 7</div>
+                    <img src="../img/TheFourAunties/menu/3.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 7</div>
+                    <img src="../img/TheFourAunties/menu/4.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 7</div>
+                    <img src="../img/TheFourAunties/menu/5.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 7</div>
+                    <img src="../img/TheFourAunties/menu/6.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">7 / 7</div>
+                    <img src="../img/TheFourAunties/menu/7.jpg" style="width:100%">
+                </div>
+
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="../img/TheFourAunties/menu/1.jpg" style="width:100%"
+                            onclick="currentSlide(1)" alt="แกงเห็ด">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/TheFourAunties/menu/2.jpg" style="width:100%"
+                            onclick="currentSlide(2)" alt="กระเพราเต้าหู้ทะเล">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/TheFourAunties/menu/3.jpg" style="width:100%"
+                            onclick="currentSlide(3)" alt="ปลาหมึกไข่รวน">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/TheFourAunties/menu/4.jpg" style="width:100%"
+                            onclick="currentSlide(4)" alt="กระเพราไก่+คะน้ากุ้ง">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/TheFourAunties/menu/5.jpg" style="width:100%"
+                            onclick="currentSlide(5)" alt="คะน้ากุ้ง">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/TheFourAunties/menu/6.jpg" style="width:100%"
+                            onclick="currentSlide(6)" alt="มักกะโรนี">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../img/TheFourAunties/menu/7.jpg" style="width:100%"
+                            onclick="currentSlide(7)" alt="ข้าวหมูหมักซอส">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="text">
+            <p> ร้านป้าสี่คน อยู่ย่านมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี ในเวิ้งมีที่จอดรถ ดีงาม สะดวกสบายมาก
+                อาหารอร่อย มีปริมาณวัยรุ่นกินอิ่ม เป็นร้านอาหารอีกร้านนึงที่ประทับใจในปริมาณอาหารและรสชาติ
+                รวมทั้งราคาเบาๆ </p>
+        </div>
+
+
+        <div class="location">
+            <button id="myBtn" class="button">Location</button>
+            <div id="myModal" class="modal">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Location</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>โครงการลานไม้ ถนนประชาอุทิศ แขวงบางมด กรุงเทพมหานคร </p>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1938.541161225474!2d100.4962913!3d13.6527561!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x82b1b827f0189d5c!2z4Lij4LmJ4Liy4LiZ4Lib4LmJ4LiyIDQg4LiE4LiZIOC4reC4suC4q-C4suC4o-C4leC4suC4oeC4quC4seC5iOC4hw!5e0!3m2!1sth!2sth!4v1574606945299!5m2!1sth!2sth"
+                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>เวลาเปิดบริการ : จันทร์ – ศุกร์ 09:00 - 21:00 น.</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+
+        var modal = document.getElementById("myModal");
+
+        var btn = document.getElementById("myBtn");
+
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
